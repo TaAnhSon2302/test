@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registration</title>
+</head>
+<body>
+    <form action="">
+        <div class="row">
+            <div class="col">
+                User ID:
+            </div>
+            <div class="col">
+                <input type="text" name="txtUserID" id="txtUserID" required>
+                <span id="statusOfUserID"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Password:
+            </div>
+            <div class="col">
+                <input type="password" name="txtPassword" id="txtPassword">
+                <span id="statusOfPassword"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Name
+            </div>
+            <div class="col">
+                <input type="text" name="txtName" id="txtName">
+                <span id="statusOfName"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Address
+            </div>
+            <div class="col">
+                <input type="text" name="txtAddress" id="txtAddress">
+                <span id="statusOfAddress"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Country
+            </div>
+            <div class="col">
+                      <select name="txtCountry" id="txtCountry">
+                                <option value="disabled selected">(Please choose an country)</option>
+                                <option value="VN">VIETNAM</option>
+                                <option value="GER">GERMANY</option>
+                                <option value="POL">POLLAND</option>
+                                <option value="ENG">ENGLAND</option>
+                                <option value="RUS">RUSSIA</option>
+                                <option value="USA">USA</option>
+                     </select>
+                     <span id="statusOfCountry"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Zip code
+            </div>
+            <div class="col">
+                <input type="text" name="txtZip" id="txtZip">
+                <span id="statusOfZip"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+               Email
+            </div>
+            <div class="col">
+                <input type="text" name="txtEmail" id="txtEmail">
+                <span id="statusOfEmail"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              Sex
+            </div>
+            <div class="col">
+                <input class='form_demo'  type="checkbox" id="male"  name="male" value="male"  onchange='toggleCheckbox("male","female")'/>
+                <label for="male">Male</label><br>
+                <input class='form_demo'  type="checkbox" id="female"  name="female" value="female"  onchange='toggleCheckbox("female","male")'/>
+                <label for="female">Female</label><br>
+                <span id="statusOfSex"></span>
+                  </div>
+            </div>
+        </div>
+       
+         <div class="col">
+                <input type="submit" name="btnRegister" id="btnRegister" value="Register">
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
