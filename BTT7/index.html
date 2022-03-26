@@ -4,115 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Registration</title>
+    <title>Web cua rieng Lam</title>
+    <script src="./vendor/fontawesome/js/all.min.js"></script>
 </head>
 <body>
-    <form action="">
-        <div class="row">
-            <div class="col">
-                User ID:
-            </div>
-            <div class="col">
-                <input type="text" name="txtUserID" id="txtUserID" required>
-                <span id="statusOfUserID"></span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                Password:
-            </div>
-            <div class="col">
-                <input type="password" name="txtPassword" id="txtPassword">
-                <span id="statusOfPassword"></span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                Name
-            </div>
-            <div class="col">
-                <input type="text" name="txtName" id="txtName">
-                <span id="statusOfName"></span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                Address
-            </div>
-            <div class="col">
-                <input type="text" name="txtAddress" id="txtAddress">
-                <span id="statusOfAddress"></span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                Country
-            </div>
-            <div class="col">
-                      <select name="txtCountry" id="txtCountry">
-                                <option value="disabled selected">(Please choose an country)</option>
-                                <option value="VN">VIETNAM</option>
-                                <option value="GER">GERMANY</option>
-                                <option value="POL">POLLAND</option>
-                                <option value="ENG">ENGLAND</option>
-                                <option value="RUS">RUSSIA</option>
-                                <option value="USA">USA</option>
-                     </select>
-                     <span id="statusOfCountry"></span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                Zip code
-            </div>
-            <div class="col">
-                <input type="text" name="txtZip" id="txtZip">
-                <span id="statusOfZip"></span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-               Email
-            </div>
-            <div class="col">
-                <input type="text" name="txtEmail" id="txtEmail">
-                <span id="statusOfEmail"></span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-              Sex
-            </div>
-            <div class="col">
-                <input class='form_demo'  type="checkbox" id="male"  name="male" value="male"  onchange='toggleCheckbox("male","female")'/>
-                <label for="male">Male</label><br>
-                <input class='form_demo'  type="checkbox" id="female"  name="female" value="female"  onchange='toggleCheckbox("female","male")'/>
-                <label for="female">Female</label><br>
-                <span id="statusOfSex"></span>
-                  </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-              Langue
-            </div>
-            <div class="col">
-                <input class='form_demo'  type="checkbox" id="English"  name="English" value="English"  onchange='toggleCheckbox("English","NotEnglish")'/>
-                <label for="male">English</label><br>
-                <input class='form_demo'  type="checkbox" id=" NotEnglish"  name="NotEnglish" value="NotEnglish"  onchange='toggleCheckbox("NotEnglish","English")'/>
-                <label for="female">NotEnglish</label><br>
-                <span id="statusOfLangue"></span>
-                  </div>
-            </div>
-        </div>
-       
-         <div class="col">
-                <input type="submit" name="btnRegister" id="btnRegister" value="Register">
-            </div>
-        </div>
+    <!-- h1->h6 là thẻ tiêu đề -->
+    <h1>Đây là thẻ tiêu đề</h1>
+    <h2>Đây là thẻ tiêu đề</h2>
+    <h3>Đây là thẻ tiêu đề</h3>
+    <h4>Đây là thẻ tiêu đề</h4> 
+    <h5>Đây là thẻ tiêu đề</h5>
+    <h6>Đây là thẻ tiêu đề</h6>
+    <!-- p là đoạn văn -->
+    <p>
+        <!-- b là in đậm -->
+       <b>Đây là nội dung in đậm</b>
+       <!-- i là in nghiêng -->
+       <i>Đây là chữ in nghiêng , Nguyễn Sỹ Lâm</i>
+       <!-- u có tác dụng gạch dưới câu văn -->
+       <u>Nhìn thấy chữ nghiêng không</u>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum aut nisi aliquid inventore accusamus accusantium dolorum voluptatem atque itaque ut. Laboriosam labore eveniet fugit necessitatibus facere voluptatibus, officia architecto.
+       <!-- span là câu văn -->
+        <span>Đây là nội dung thẻ span</span>
+    </p>
+
+    <!-- ./ để trỏ vào một ảnh , còn muốn lấy ảnh sang file khác dùng ../ -->
+    <img src="./niecy4jmlmh81.png" alt=""> 
+
+    <!-- a dùng để trỏ link -->
+    <a href="./Baitap.html">
+        <img src="./niecy4jmlmh81.png" alt="">  
+    </a>
+
+    <ul>
+    <ol>
+        <li>Đây là nội dung 1</li>
+        <li>Đây là nội dung 2</li>
+        <li>Đây là nội dung 3</li>
+    </ol>
+    </ul>
+
+    <table border="1">
+        <thead>
+            <!-- phần tiêu đề của bảng -->
+            <tr>
+                <th>Person</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <!-- phần nội dung của bảng -->
+        <!-- Chú ý : rowspan để gộp hàng còn colspan là gộp cột -->
+        <tbody>
+            <tr>
+                <td>Nguyễn Sỹ Lâm</td>
+                <td>20</td>
+                <td>Hà Nội</td>
+            </tr>
+            <tr>
+                <td><b>Nguyễn Thế Vỹ</b></td>
+                <td>20</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- thẻ form dùng để tạo form đăng nhập hoặc đăng ký -->
+    <form action="" method="">
+        <p>Email:</p>
+        <!-- input để tạo ô trống để nhập -->
+        <!-- placeholder dùng để ẩn chữ ở bên dưới ô điền -->
+        <input type="text" name="email" value="" placeholder="vui lòng nhập đúng email">
+        <p>Password:</p>
+        <input type="password" name="password" value="" placeholder="Vui lòng nhập password">
+        <!-- cách nhập mật khẩu không hiện văn bản ta thay type từ text thành password -->
+        <p>Giới tính</p>
+        <!-- để nhập chọn chấm là Nam hoặc Nữ ta thay type từ text sang radio -->
+        <input type="radio" name="1" value="male">Nam
+        <input type="radio" name="1" value="female">Nữ
+        <input type="radio" name="1" value="unknow" checked>Khác
+        <!-- checked dùng để đặt mặc định bất kỳ khi chưa được chọn -->
+
+        <p>Ngày sinh</p>
+        <!-- thẻ select dùng để chọn một list -->
+        <select name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+
+        <p>Ngôn ngữ</p>
+        <!-- tpye checkbox dùng để tạo một ô để tick trong đấy có thể chọn được nhiều ô -->
+        <input type="checkbox" name="language" value="english">Tiếng anh
+        <input type="checkbox" name="language" value="spanish">Tây ban nha
+        
+        <!-- textarea dùng để tạo ra bảng ghi chú để điền thông tin -->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <button type=""></button>
+
     </form>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G1mz0Qv6Itg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4720328554868!2d105.86154171484155!3d21.013790693665317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf08bb82441%3A0x3481873c6a253d6f!2zNjkgUC4gVsOibiDEkOG7k24sIELhuqFjaCDEkOG6sW5nLCBIYWkgQsOgIFRyxrBuZywgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1646895971997!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <i class="fa-brands fa-facebook-square"></i>
+    
+    <!-- sub dùng để cho số 2 bên dưới viết công thức hoá học -->
+    H<sub>2</sub>O
+    <!-- sup dùng để viết bình phương cho một số -->
+    x<sup>2</sup>
+    
+    <div class="color">
+        <p id="green">Xanh lá cây</p>
+        <p id="yellow">Vàng</p>
+        <p id="blue">Xanh nước biển</p>
+        <p id="brown">Màu nâu</p>
+    </div>
+
+    <img src="https://cdn.tgdd.vn/Products/Images/42/246196/Samsung-Galaxy-A53-xanh-thumb-600x600.jpg" alt="ảnh điện thoại">
+
+
+
+
 </body>
 </html>
